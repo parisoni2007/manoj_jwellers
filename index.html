@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANOJ JEWELLERS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        header {
+            border: 4px solid goldenrod;
+            margin: auto;
+            width: 80%;
+            text-align: center;
+            padding: 20px;
+            background-color: lightgoldenrodyellow;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 80px;
+            animation: bounce 1.5s infinite alternate;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 0;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .container {
+            margin: auto;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .box {
+            border: 4px solid goldenrod;
+            background-color: lightgoldenrodyellow;
+            margin: 10px 0;
+            padding: 20px;
+            width: 32%;
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            border-radius: 40px;
+            padding: 25px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .navbar ul {
+            display: flex;
+            padding: 2px;
+            margin: 2px;
+            list-style: none;
+        }
+
+        .navbar li {
+            font-size: 1px;
+            margin: 2px 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar li:hover {
+            transform: scale(1.1);
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 25px;
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 25px;
+        }
+
+        .navbar li a:hover {
+            background-color: black;
+            color: goldenrod;
+            text-shadow: 2px 2px 8px gold;
+        }
+
+        .search {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .search input {
+            border: 2px solid goldenrod;
+            border-radius: 14px;
+            padding: 8px 17px;
+            width: 200px;
+            font-size: 16px;
+            transition: width 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .search input:focus {
+            width: 300px;
+            box-shadow: 0px 0px 10px gold;
+            outline: none;
+        }
+
+        .left img {
+            width: 300px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        a {
+            display: block;
+            margin: 50px;
+            font-size: 25px;
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s, transform 0.3s;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            width: 4px;
+            padding: 4px;
+            font-style: italic;
+        }
+
+        a:hover {
+            color: goldenrod;
+            transform: scale(1.1);
+            text-shadow: 2px 2px 8px gold;
+        }
+
+        a img {
+            width: 600px;
+            margin-left: 700px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            transition: transform 0.3s ease-in-out;
+            border: 4px solid goldenrod;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        a img:hover {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+       p img {
+            margin: auto;
+            width: 500px;
+            animation: bounce 1.5s infinite alternate;
+            border: 4px solid goldenrod;
+            border-radius: 4px;
+            display: inline-block;
+            height: 500px;
+        }
+        footer {
+            background-color: goldenrod;
+            color: black;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            animation: slideUp 1s ease-in-out;
+            border: white;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="https://jianlondon.co.uk/prodimages/Large/56347YSXZ.jpg" alt="Logo">
+        <h3> MANOJ JEWELLERS </h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <p>Wear your heart around your neck with our curated collection of necklaces. Express your story and style
+                with a special piece close to your heart.</p>
+        </div>
+        <div class="box">
+            <p>Personalize your jewelry with our hand-stamped and customized collection. From initials to special dates,
+                it's a beautiful way to carry your treasured moments. Shop now to make it your own.</p>
+        </div>
+        <div class="box">
+            <p>Upgrade your jewelry collection with our ready-to-ship pieces: earrings, bracelets, studs, cuffs,
+                necklaces, rings. Get speedy style with our runway-ready pieces.</p>
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shopping</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="search">
+        <input type="text" name="search" id="search" placeholder="Search this website">
+    </div>
+    <div class="left">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.QpHYuRXowAA66j3BvGG8_QHaHa&pid=Api&P=0&h=220" alt="Jewelry">
+    </div>
+    <p>you can also follow on :</p>
+
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com" target="blank">instagram</a>
+    <a href="https://www.yahoo.com" target="blank">yahoo</a>
+    <a href="http://google.com">
+        <img src="https://blog.southindiajewels.com/wp-content/uploads/2020/10/diamond-jewellery-design-3-1024x1024.jpg"
+            alt="Google Logo">
+    </a>
+    <p>
+        <img src="https://cdn.shopify.com/s/files/1/0746/5259/products/3D_Ring_Model_1800x1800.jpg?v=1568832443" alt="">
+    </p>
+    <footer>
+        <p>&copy; manoj jwellers @ All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
